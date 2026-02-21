@@ -27,6 +27,15 @@ app.use(limiter);
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+app.get("/", (_, res) => {
+  res.json({
+    name: "Hiring API",
+    version: "1.0.0",
+    docs: "https://hiring-api-jp8x.onrender.com/api-docs",
+    health: "https://hiring-api-jp8x.onrender.com/health",
+  });
+});
+
 app.get("/health", (_, res) => {
   res.json({ status: "ok", timestamp: new Date().toISOString() });
 });
