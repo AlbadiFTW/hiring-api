@@ -1,0 +1,29 @@
+info:
+  name: creating a job
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:5000/api/jobs
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImNtbHdlaXZzZDAwMDB0aW41N3JtdmZ6bmsiLCJlbWFpbCI6InRlc3RAZXhhbXBsZS5jb20iLCJyb2xlIjoiZW1wbG95ZXIiLCJpYXQiOjE3NzE2ODMzNTIsImV4cCI6MTc3MjI4ODE1Mn0.dxsbb7TWdZyGLsvYfsVtyUgknfQQIVUNocQY_yyvSJA
+  body:
+    type: json
+    data: |-
+      {
+        "title": "Frontend Engineer",
+        "company": "Noon",
+        "location": "Dubai, UAE",
+        "type": "Full-time",
+        "salary": "18,000 AED",
+        "description": "We are looking for a skilled Frontend Engineer to join our growing team in Dubai."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
