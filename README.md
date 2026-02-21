@@ -154,9 +154,9 @@ http://localhost:5000/api-docs
 
 ### Jobs
 
-| Method | Endpoint | Description | Auth Required ❌|
+| Method | Endpoint | Description | Auth Required |
 |--------|----------|-------------|---------------|
-| GET | `/api/jobs` | Get all jobs (with pagination) | ✅ |
+| GET | `/api/jobs` | Get all jobs (with pagination) | ❌ |
 | GET | `/api/jobs/:id` | Get job by ID | ✅ |
 | POST | `/api/jobs` | Create a new job (employers only) | ✅ |
 | PATCH | `/api/jobs/:id` | Update a job | ✅ |
