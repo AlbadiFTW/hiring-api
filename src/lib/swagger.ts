@@ -8,7 +8,10 @@ const options = {
       version: "1.0.0",
       description: "A REST API for job listings and applications",
     },
-    servers: [{ url: "http://localhost:5000" }],
+    servers: [
+      { url: "https://hiring-api-jp8x.onrender.com", description: "Production" },
+      { url: "http://localhost:5000", description: "Development" },
+    ],
     components: {
       securitySchemes: {
         bearerAuth: {

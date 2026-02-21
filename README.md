@@ -4,8 +4,9 @@ A production-ready RESTful API for managing job postings and applications. Built
 
 ## 🌐 Live Demo
 
-**API Base URL**: `https://your-app.railway.app`  
-**Interactive Docs**: [https://your-app.railway.app/api-docs](https://your-app.railway.app/api-docs)
+- **API Base URL:** https://hiring-api-jp8x.onrender.com
+- **Interactive Docs:** https://hiring-api-jp8x.onrender.com/api-docs
+- **Health Check:** https://hiring-api-jp8x.onrender.com/health
 
 > 💡 Try out the API endpoints directly in the interactive Swagger documentation!
 
